@@ -15,12 +15,15 @@ MonoBehaviour:
   datas:
   - name: Grenousse
     icon: {fileID: 21300000, guid: 36f48916e57c54b42ae6e186f3bb3cff, type: 3}
-    size: 0.3
-    weight: 7
-    caption: "Son apparente nonchalance est trompeuse. Il change soudainement d\u2019attitude
-      et domine ses adversaires en un clin d\u2019\u0153il.  "
-    category: Crapobulle
-    type: Eau
+    info:
+      size: 0.3
+      weight: 7
+      caption: "Son apparente nonchalance est trompeuse. Il change soudainement d\u2019attitude
+        et domine ses adversaires en un clin d\u2019\u0153il."
+      category: Crapobulle
+      type: 0400000000000000
+      weakness: 0800000006000000
+      resistances: 020000000c0000001100000004000000
     statsBase:
       pv: 0
       atk: 0
@@ -35,14 +38,18 @@ MonoBehaviour:
       atkSpe: 0
       defSpe: 0
       speed: 0
-  - name: "Cro\xE2poral "
+  - name: "Cro\xE2poral"
     icon: {fileID: 21300000, guid: f5ad0019f3ebfaa4692996665bcb2bd5, type: 3}
-    size: 0.6
-    weight: 10.9
-    caption: "Ce fin strat\xE8ge sait se servir du terrain \xE0 son avantage. Quand
-      il lance des cailloux recouverts d\u2019\xE9cume, il ne manque jamais sa cible.  "
-    category: Crapobulle
-    type: Eau
+    info:
+      size: 0.6
+      weight: 10.9
+      caption: "Ce fin strat\xE8ge sait se servir du terrain \xE0 son avantage. Quand
+        il lance des cailloux recouverts d\u2019\xE9cume, il ne manque jamais sa
+        cible."
+      category: Crapobulle
+      type: 0400000000000000
+      weakness: 0800000006000000
+      resistances: 020000000c0000001100000004000000
     statsBase:
       pv: 0
       atk: 0
@@ -59,13 +66,16 @@ MonoBehaviour:
       speed: 0
   - name: Amphinobi
     icon: {fileID: 21300000, guid: 813c5fa11b075964bbbd281d9b1a93b0, type: 3}
-    size: 1.5
-    weight: 40
-    caption: "Sa longue langue enroul\xE9e autour de son cou peut sentir les mouvements
-      de l\u2019air. Cela l\u2019aide \xE0 d\xE9tecter les adversaires qu\u2019il
-      ne peut pas voir.  "
-    category: Ninja
-    type: "Eau T\xE9n\xE8bres"
+    info:
+      size: 1.5
+      weight: 40
+      caption: "Sa longue langue enroul\xE9e autour de son cou peut sentir les mouvements
+        de l\u2019air. Cela l\u2019aide \xE0 d\xE9tecter les adversaires qu\u2019il
+        ne peut pas voir."
+      category: Ninja
+      type: 0400000010000000
+      weakness: 0d00000008000000120000000300000006000000
+      resistances: 10000000020000000f0000000c0000001100000004000000
     statsBase:
       pv: 0
       atk: 0
@@ -82,12 +92,15 @@ MonoBehaviour:
       speed: 0
   - name: "Flab\xE9b\xE9"
     icon: {fileID: 21300000, guid: c7dd9077f56eed047ba95e8a8e112257, type: 3}
-    size: 0.1
-    weight: 0.1
-    caption: "Ce Pok\xE9mon parvient \xE0 extraire l\u2019\xE9nergie cach\xE9e des
-      fleurs sauvages. Il aime particuli\xE8rement les fleurs rouges.  "
-    category: Uniflore
-    type: "F\xE9e"
+    info:
+      size: 0.1
+      weight: 0.1
+      caption: "Ce Pok\xE9mon parvient \xE0 extraire l\u2019\xE9nergie cach\xE9e
+        des fleurs sauvages. Il aime particuli\xE8rement les fleurs rouges."
+      category: Uniflore
+      type: 1200000000000000
+      weakness: 0700000011000000
+      resistances: 0d0000001000000003000000
     statsBase:
       pv: 0
       atk: 0
@@ -104,13 +117,16 @@ MonoBehaviour:
       speed: 0
   - name: Floette
     icon: {fileID: 21300000, guid: cdc1e1af755e105439802ce5abe4b3f7, type: 3}
-    size: 0.2
-    weight: 0.9
-    caption: "Ce Pok\xE9mon parvient \xE0 canaliser le peu d\u2019\xE9nergie encore
-      pr\xE9sent dans les fleurs fan\xE9es pour leur redonner du tonus. Il tient
-      une fleur rouge.  "
-    category: Uniflore
-    type: "F\xE9e"
+    info:
+      size: 0.2
+      weight: 0.9
+      caption: "Ce Pok\xE9mon parvient \xE0 canaliser le peu d\u2019\xE9nergie encore
+        pr\xE9sent dans les fleurs fan\xE9es pour leur redonner du tonus. Il tient
+        une fleur rouge."
+      category: Uniflore
+      type: 1200000000000000
+      weakness: 0700000011000000
+      resistances: 0d0000001000000003000000
     statsBase:
       pv: 0
       atk: 0
@@ -127,12 +143,15 @@ MonoBehaviour:
       speed: 0
   - name: Florges
     icon: {fileID: 21300000, guid: 69f50460f5f38c546a8571829af4c34c, type: 3}
-    size: 1.1
-    weight: 10
-    caption: "Ce Pok\xE9mon transforme son territoire en magnifique jardin fleuri.
-      Il tire sa puissance des fleurs rouges qui ornent son cou.  "
-    category: Jardin
-    type: "F\xE9e"
+    info:
+      size: 1.1
+      weight: 10
+      caption: "Ce Pok\xE9mon transforme son territoire en magnifique jardin fleuri.
+        Il tire sa puissance des fleurs rouges qui ornent son cou."
+      category: Jardin
+      type: 1200000000000000
+      weakness: 0700000011000000
+      resistances: 0d0000001000000003000000
     statsBase:
       pv: 0
       atk: 0
@@ -149,13 +168,16 @@ MonoBehaviour:
       speed: 0
   - name: Monorpale
     icon: {fileID: 21300000, guid: 77916842ce586c747ae951ebff623b78, type: 3}
-    size: 0.8
-    weight: 2
-    caption: "L\u2019\xE2me de Monorpale est celle d\u2019un humain qui a \xE9t\xE9
-      tu\xE9 il y a fort longtemps, par la m\xEAme lame qui forme maintenant son
-      corps.  "
-    category: Glaive
-    type: Acier Spectre
+    info:
+      size: 0.8
+      weight: 2
+      caption: "L\u2019\xE2me de Monorpale est celle d\u2019un humain qui a \xE9t\xE9
+        tu\xE9 il y a fort longtemps, par la m\xEAme lame qui forme maintenant son
+        corps."
+      category: Glaive
+      type: 110000000f000000
+      weakness: 10000000020000000f00000009000000
+      resistances: 0e0000001200000005000000060000000c0000000a0000000b00000011000000
     statsBase:
       pv: 0
       atk: 0
@@ -172,12 +194,15 @@ MonoBehaviour:
       speed: 0
   - name: "Dimocl\xE8s"
     icon: {fileID: 21300000, guid: 84529fa9a42293644b0156d946f20841, type: 3}
-    size: 0.8
-    weight: 4.5
-    caption: "Il s\u2019est d\xE9doubl\xE9 en \xE9voluant. Il intimide ses ennemis
-      \xE0 grands coups de bruits m\xE9talliques en entrechoquant ses deux lames.  "
-    category: Glaive
-    type: Acier Spectre
+    info:
+      size: 0.8
+      weight: 4.5
+      caption: "Il s\u2019est d\xE9doubl\xE9 en \xE9voluant. Il intimide ses ennemis
+        \xE0 grands coups de bruits m\xE9talliques en entrechoquant ses deux lames."
+      category: Glaive
+      type: 110000000f000000
+      weakness: 10000000020000000f00000009000000
+      resistances: 0e0000001200000005000000060000000c0000000a0000000b00000011000000
     statsBase:
       pv: 0
       atk: 0
@@ -194,12 +219,15 @@ MonoBehaviour:
       speed: 0
   - name: Exagide
     icon: {fileID: 21300000, guid: 88622761f64bf074ca7b756ce14eaa9e, type: 3}
-    size: 1.7
-    weight: 53
-    caption: "Gr\xE2ce \xE0 son corps en acier et \xE0 sa barri\xE8re psychique,
-      il peut se d\xE9fendre en affaiblissant toutes sortes d\u2019attaques.  "
-    category: Noble Lame
-    type: Acier Spectre
+    info:
+      size: 1.7
+      weight: 53
+      caption: "Gr\xE2ce \xE0 son corps en acier et \xE0 sa barri\xE8re psychique,
+        il peut se d\xE9fendre en affaiblissant toutes sortes d\u2019attaques."
+      category: Noble Lame
+      type: 110000000f000000
+      weakness: 10000000020000000f00000009000000
+      resistances: 0e0000001200000005000000060000000c0000000a0000000b00000011000000
     statsBase:
       pv: 0
       atk: 0
@@ -216,12 +244,15 @@ MonoBehaviour:
       speed: 0
   - name: Zygarde
     icon: {fileID: 21300000, guid: a9df85e819c7350469dbf25a98a5bafa, type: 3}
-    size: 5
-    weight: 305
-    caption: "La forme que Zygarde prend lorsqu\u2019il rassemble 50 % de ses Cellules.
-      Sa mission est de surveiller l\u2019\xE9cosyst\xE8me."
-    category: Equilibre
-    type: Dragon Sol
+    info:
+      size: 5
+      weight: 305
+      caption: "La forme que Zygarde prend lorsqu\u2019il rassemble 50 % de ses Cellules.
+        Sa mission est de surveiller l\u2019\xE9cosyst\xE8me."
+      category: Equilibre
+      type: 0e00000009000000
+      weakness: 0e00000012000000
+      resistances: 02000000070000000b000000
     statsBase:
       pv: 0
       atk: 0

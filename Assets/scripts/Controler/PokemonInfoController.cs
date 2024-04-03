@@ -11,6 +11,12 @@ public class PokemonInfoController : MonoBehaviour
     [SerializeField] private Text txtCategory;
     [SerializeField] private Text txtType;
     [SerializeField] private Text txtCaption;
+    [SerializeField] private Text txtPv;
+    [SerializeField] private Text txtAtk;
+    [SerializeField] private Text txtDef;
+    [SerializeField] private Text txtAtkSpe;
+    [SerializeField] private Text txtDefSpe;
+    [SerializeField] private Text txtSpeed;
     [SerializeField] private int idPoke;
 
     private DatabaseManager databaseManager;
@@ -42,10 +48,16 @@ public class PokemonInfoController : MonoBehaviour
     public void RefreshUI(PokemonData data){
         imgIcon.sprite = data.icon;
         txtName.text = data.name;
-        txtWeight.text = $"Poids : {data.weight.ToString()} kg";
-        txtSize.text = $"Taille : {data.size.ToString()} m";
-        txtCategory.text = $"Catégorie : {data.category}";
-        txtType.text = $"Type : {data.type}";
-        txtCaption.text = $"Description : {data.caption}";
+        txtWeight.text = $"Poids : {data.info.weight.ToString("f1")} kg";
+        txtSize.text = $"Taille : {data.info.size.ToString("f1")} m";
+        txtCategory.text = $"Catégorie : {data.info.category}";
+        txtType.text = $"Type : {data.info.type[0].ToString()}, {data.info.type[1].ToString()}";
+        txtCaption.text = $"Description : {data.info.caption}";
+        txtPv.text = $"Pv : {data.statsBase.pv}";
+        txtAtk.text = $"Atk : {data.statsBase.atk}";
+        txtDef.text = $"Def : {data.statsBase.def}";
+        txtAtkSpe.text = $"AtkSpe : {data.statsBase.atkSpe}";
+        txtDefSpe.text = $"DefSpe : {data.statsBase.defSpe}";
+        txtSpeed.text = $"Speed : {data.statsBase.speed}";
     }
 }

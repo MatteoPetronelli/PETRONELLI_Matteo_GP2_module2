@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -8,37 +9,51 @@ public class PokemonData
 {
     public string name;
     public Sprite icon;
-    public float size;
-    public float weight;
-    public string caption;
-    public string category;
-    public string type;
-    //public types[] type;
 
-    public enum types
+    [Serializable]
+    public struct Infos
     {
-        Normal,
-        Feu,
-        Combat,
-        Eau,
-        Vol,
-        Plante,
-        Poison,
-        Electrik,
-        Sol,
-        Psy,
-        Roche,
-        Glace,
-        Insecte,
-        Dragon,
-        Spectre,
-        Ténèbres,
-        Acier,
-        Fée
-    }
+        public enum types
+        {
+            None,
+            Normal,
+            Feu,
+            Combat,
+            Eau,
+            Vol,
+            Plante,
+            Poison,
+            Electrik,
+            Sol,
+            Psy,
+            Roche,
+            Glace,
+            Insecte,
+            Dragon,
+            Spectre,
+            Ténèbres,
+            Acier,
+            Fée
+        }
+        public float size;
+        public float weight;
+        public string caption;
+        public string category;
+        public types[] type;
+        public types[] weakness;
+        public types[] resistances;
 
-    public types[] weakness = new types[2];
-    public types[] resistances = new types[2];
+        public Infos(float size, float weight, string caption, string category, types[] type, types[] weakness, types[] resistances)
+        {
+            this.size = size;
+            this.weight = weight;
+            this.caption = caption;
+            this.category = category;
+            this.type = type;
+            this.weakness = weakness;
+            this.resistances = resistances;
+        }
+    }
 
     [Serializable]
     public struct Stats
@@ -74,17 +89,14 @@ public class PokemonData
         }
     }
 
+    public Infos info;
     public Stats statsBase;
     public Stats statsSpe;
-    public PokemonData(string name, Sprite icon, float size, float weight, string caption, string category, string type)
+    public PokemonData(string name, Sprite icon, Infos info)
     {
         this.name = name;
         this.icon = icon;
-        this.size = size;
-        this.weight = weight;
-        this.caption = caption;
-        this.category = category;
-        this.type = type;
+        this.info = info;
     }
 }
 
